@@ -16,10 +16,12 @@
 
     <p>¿Quieres cambiar tus viejos tenis por un par personalizado de Tenis Mike&#174;?<br><br>Justifica el por qué tus tenis se <em>tienen que</em> ir y tú puedes ser uno de los diez afortunados ganadores.</p>
 
-    <p>Información del Participante</p>
+    <h2>Información del Participante</h2>
 
     <form action="http://localhost/hweb/practicas/p09/concurso.php" method="post">
-    
+
+      <fieldset>  
+      <legend>Informacion Personal</legend>
     <ul>
     <li>Nombre:<input type="text" name ="name"></li>
     <li>Dirección de E-mail: <input type ="email" name="email"></li>
@@ -29,13 +31,12 @@
     placeholder="Escribe"></textarea></li>
     </ul>
 
-    <p><input type="submit">
-    <input type ="reset"></p>
-    </form>
-
+    
+  </fieldset>
+  
     <h2>Diseña tus Mike personalizados:</h2>
-
-    <p>Diseño personalizado del Tenis</p>
+  <fieldset>
+    <legend>Diseño personalizado del Tenis</legend>
 
     <p>Color <em>(escoge uno)</em>:</p>
       <ul>
@@ -44,16 +45,18 @@
       <li><input type="radio" name="color" value="black">Negro</li>
       <li><input type="radio" name="color" value="silver">Plateado</li>
       </ul>
-
-    <p>Características <em>(escoge tantas como quieras)</em>:</p>
+  </fieldset>
+<fieldset>
+    <legend>Características <em>(escoge tantas como quieras)</em>:</legend>
       <ul>
       <li><input type="checkbox" name="features[]" value="laces"> brillantes</li>
       <li><input type="checkbox" name="features[]" value="laces">Logo metálico</li>
       <li><input type="checkbox" name="features[]" value="laces">Suela luminosa</li>
       <li><input type="checkbox" name="features[]" value="laces">WiFi integrado</li>
       </ul>
-
-    <p>Talla</p>
+  </fieldset>
+<fieldset>
+    <legend>Talla</legend>
     <p>Las medidas reflejan el estándar masculino:
       <select name="size" size="1">
     <option value="3">3</option>
@@ -67,7 +70,10 @@
     <option value="11">11</option>
   </select>
     </p>
+</fieldset>
+     <input type="submit" value="¡Chidos mis Tenis!">
+     <input type="reset" value="Restablecer">
 
-
+    </form>
   </body>
 </html>
